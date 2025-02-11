@@ -1,0 +1,71 @@
+Git Push & Pull Guide
+Prerequisites
+Install Git
+
+Initialize Git in your project (if not done already):
+
+bash
+Copy
+Edit
+git init
+Add remote repository (replace <remote-url> with your actual URL):
+
+bash
+Copy
+Edit
+git remote add origin <remote-url>
+1. Git Pull
+To pull the latest changes from the remote repository into your local repository:
+
+bash
+Copy
+Edit
+git pull origin <branch-name>
+Example: Pull from main branch:
+bash
+Copy
+Edit
+git pull origin main
+This fetches and merges changes from the remote repository to your local working branch.
+
+2. Git Push
+To push your local changes to the remote repository:
+
+Stage your changes:
+Add files you want to commit (or use . to add all changed files):
+
+bash
+Copy
+Edit
+git add .
+Commit your changes: Write a commit message (replace your message with a meaningful description):
+
+bash
+Copy
+Edit
+git commit -m "your message"
+Push to the remote repository: Push changes to the remote repository (replace <branch-name> with your branch):
+
+bash
+Copy
+Edit
+git push origin <branch-name>
+Example: Push to main branch:
+
+bash
+Copy
+Edit
+git push origin main
+Additional Commands
+Check Git status (see uncommitted changes):
+
+bash
+Copy
+Edit
+git status
+Check remote repositories:
+
+bash
+Copy
+Edit
+git remote -v
