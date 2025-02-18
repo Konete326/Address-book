@@ -52,10 +52,13 @@
                   <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.php"> About</a>
+                  <a class="nav-link" href="cosmatic.php"> Cosmatic</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="jewellery.php">Jewellery </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.php">Contact us</a>
