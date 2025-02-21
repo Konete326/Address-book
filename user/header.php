@@ -418,6 +418,161 @@
 .item_container .box:hover::before {
   animation: animatedBorder 2s linear infinite;
 }
+.header_section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.navbar-brand {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.navbar-brand:hover {
+  transform: translateZ(20px);
+}
+
+.navbar-brand img {
+  max-height: 50px;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+  transform: translateZ(30px);
+}
+
+.nav-link {
+  position: relative;
+  padding: 8px 15px !important;
+  color: white !important;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.nav-link:hover {
+  transform: translateZ(15px);
+  color: #ffd700 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #ffd700, #ff9000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+  transform: translateZ(25px);
+}
+
+.nav-item.active .nav-link {
+  background: linear-gradient(135deg, #ffd700, #ff9000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  font-weight: 700;
+  position: relative;
+  transform: translateZ(20px);
+}
+
+.nav-item.active .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ff9000);
+  transform: scaleX(1);
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.4);
+}
+
+.nav-item.active .nav-link::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: #ffd700;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ffd700;
+  animation: pulseActive 2s infinite;
+}
+
+@keyframes pulseActive {
+  0% { transform: translateX(-50%) scale(1); opacity: 1; }
+  50% { transform: translateX(-50%) scale(1.5); opacity: 0.5; }
+  100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.quote_btn-container {
+  transform-style: preserve-3d;
+}
+
+.quote_btn-container a {
+  transform: translateZ(20px);
+}
+
+.cart_number {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: linear-gradient(135deg, #ffd700, #ff9000);
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  transform: translateZ(25px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.nav_search-btn {
+  background: linear-gradient(135deg, #ffd700, #ff9000);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translateZ(20px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  }
+}
+
   </style>
 </head>
 
@@ -441,12 +596,12 @@ document.querySelectorAll('.price_container .box').forEach(card => {
   });
 });
 </script>
-  <div class="hero_area">
+<div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="images/logo.png" alt="">
             <span>
               Lodge
@@ -456,39 +611,42 @@ document.querySelectorAll('.price_container .box').forEach(card => {
             <span class="navbar-toggler-icon"></span>
           </button>
 
+          <?php
+            $current_page = basename($_SERVER['PHP_SELF']);
+          ?>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+              <ul class="navbar-nav">
+                <li class="nav-item <?php echo ($current_page == 'index.php') ? 'active' : ''; ?>">
+                  <a class="nav-link" href="index.php">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="cosmatic.php"> Cosmatic</a>
+                <li class="nav-item <?php echo ($current_page == 'cosmatic.php') ? 'active' : ''; ?>">
+                  <a class="nav-link" href="cosmatic.php">Cosmatic</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="jewellery.php">Jewellery </a>
+                <li class="nav-item <?php echo ($current_page == 'jewellery.php') ? 'active' : ''; ?>">
+                  <a class="nav-link" href="jewellery.php">Jewellery</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php echo ($current_page == 'about.php') ? 'active' : ''; ?>">
                   <a class="nav-link" href="about.php">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>">
                   <a class="nav-link" href="contact.php">Contact us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php echo ($current_page == 'login.php') ? 'active' : ''; ?>">
                   <a class="nav-link" href="login.php">Login</a>
                 </li>
               </ul>
-
             </div>
-            <div class="quote_btn-container ">
-              <a href="">
+            <div class="quote_btn-container">
+              <a href="cart.php" class="<?php echo ($current_page == 'cart.php') ? 'active' : ''; ?>">
                 <img src="images/cart.png" alt="">
                 <div class="cart_number">
                   0
                 </div>
               </a>
               <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit"></button>
               </form>
             </div>
           </div>

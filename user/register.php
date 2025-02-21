@@ -1,235 +1,266 @@
-<!DOCTYPE html>
-<html>
+<?php
+include("header.php");
+?>
+<center>
+        <div class="container">
+                <div class="card">
+                    <a class="singup">Register Now</a>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Login - Lodge</title>
-  
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+                    <div class="inputBox1">
+                        <input type="text" required="required">
+                        <span class="user">Username</span>
+                    </div>
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Poppins:400,600,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-</head>
-<style>
-  /* .pt-5, .py-5 {
-    padding-top: 3rem !important;
-    position: absolute;
-    top: 100px;
-    width: 100%;
-} */
-.btn-primary {
-    color: #fff;
-    background-color: #f19215;
-    border-color: #ffffff;
-}
-</style>
-<body>
-
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
-            <span>
-              Lodge
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.php"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="jewellery.php">Jewellery </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.php">Contact us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.php">Login</a>
-                </li>
-              </ul>
-
-            </div>
-            <div class="quote_btn-container ">
-              <a href="">
-                <img src="images/cart.png" alt="">
-                <div class="cart_number">
-                  0
+                    <div class="inputBox1">
+                        <input type="text" required="required">
+                        <span class="user">Email</span>
+                    </div>
+        
+                    <div class="inputBox">
+                        <input type="password" required="required">
+                        <span>Password</span>
+                    </div>
+        
+                    <div class="inputBox">
+                        <input type="password" required="required">
+                        <span>Confirm Password</span>
+                    </div>
+        
+                    <button class="enter">Register</button>
+                    <p>I have an account?<a href="login.php"> Login</a></p>
+        
                 </div>
-              </a>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
             </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
+        </center>
+<style>
+  .singup {
 
+color: #000;
+text-transform: uppercase;
+letter-spacing: 2px;
+display: block;
+font-weight: bold;
+font-size: x-large;
+margin-top: 100px;
+}
 
-     <!-- Login Section -->
+.card {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 350px;
+width: 450px;
+margin:30px;
+flex-direction: column;
+gap: 35px;
+border-radius: 15px;
+background: #e3e3e3;
+box-shadow: 20px 20px 32px #ffd700,
+      -10px 10px 32px #ff9000;
+border-radius: 8px;
+}
 
-     <section class="register_section py-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card p-4">
-          <h3 class="text-center mb-4">Register</h3>
-          <form action="register_process.php" method="POST">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label for="confirm_password">Confirm Password</label>
-              <input type="password" id="confirm_password" name="confirm_password" class="form-control" required>
-            </div>
-            <div class="form-group text-center">
-              <button type="submit" class="btn btn-primary">Register</button>
-            </div>
-            <p class="text-center">Already have an account? <a href="login.php">Login</a></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+.inputBox,
+.inputBox1 {
+position: relative;
+width: 350px;
+}
 
-  <!-- End Login Section -->
-  </div>
+.inputBox input,
+.inputBox1 input {
+width: 100%;
+padding: 10px;
+outline: none;
+border: none;
+color: #000;
+font-size: 1em;
+background: transparent;
+border-left: 2px solid #000;
+border-bottom: 2px solid #000;
+transition: 0.1s;
+border-bottom-left-radius: 8px;
+}
 
-<!-- info section -->
-<section class="info_section ">
-    <div class="container">
-      <div class="info_container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="info_logo">
-              <a href="">
-                <img src="images/logo.png" alt="">
-                <span>
-                  Lodge
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="info_contact">
-              <a href="">
-                <img src="images/location.png" alt="">
-                <span>
-                  Address
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="info_contact">
-              <a href="">
-                <img src="images/phone.png" alt="">
-                <span>
-                  +01 1234567890
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="info_contact">
-              <a href="">
-                <img src="images/mail.png" alt="">
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="info_form">
-          <div class="d-flex justify-content-center">
-            <h5 class="info_heading">
-              Newsletter
-            </h5>
-          </div>
-          <form action="">
-            <div class="email_box">
-              <label for="email2">Enter Your Email</label>
-              <input type="text" id="email2">
-            </div>
-            <div>
-              <button>
-                subscribe
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="info_social">
-          <div class="d-flex justify-content-center">
-            <h5 class="info_heading">
-              Follow Us
-            </h5>
-          </div>
-          <div class="social_box">
-            <a href="">
-              <img src="images/fb.png" alt="">
-            </a>
-            <a href="">
-              <img src="images/twitter.png" alt="">
-            </a>
-            <a href="">
-              <img src="images/linkedin.png" alt="">
-            </a>
-            <a href="">
-              <img src="images/insta.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+.inputBox span,
+.inputBox1 span {
+margin-top: 5px;
+position: absolute;
+left: 0;
+transform: translateY(-4px);
+margin-left: 10px;
+padding: 10px;
+pointer-events: none;
+font-size: 12px;
+color: #000;
+text-transform: uppercase;
+transition: 0.5s;
+letter-spacing: 3px;
+border-radius: 8px;
+}
 
-  <!-- end info_section -->
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+transform: translateX(113px) translateY(-15px);
+font-size: 0.8em;
+padding: 5px 10px;
+background: #000;
+letter-spacing: 0.2em;
+color: #fff;
+border: 2px;
+}
 
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      &copy; <span id="displayYear"></span> All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </section>
-  <!-- footer section -->
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+transform: translateX(156px) translateY(-15px);
+font-size: 0.8em;
+padding: 5px 10px;
+background: #000;
+letter-spacing: 0.2em;
+color: #fff;
+border: 2px;
+}
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
-</body>
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+border: 2px solid #000;
+border-radius: 8px;
+}
 
-</html>
+.enter {
+height: 45px;
+width: 100px;
+border-radius: 5px;
+border: 2px solid #000;
+cursor: pointer;
+background-color: transparent;
+transition: 0.5s;
+text-transform: uppercase;
+font-size: 10px;
+letter-spacing: 2px;
+margin-bottom: 3em;
+}
+
+.enter:hover {
+background-color: rgb(0, 0, 0);
+color: white;
+} 
+   @media (max-width: 768px) {
+    .singup {
+
+color: #000;
+text-transform: uppercase;
+letter-spacing: 2px;
+display: block;
+font-weight: bold;
+font-size: x-large;
+margin-top: 100px;
+}
+
+.card {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 350px;
+width: 350px;
+flex-direction: column;
+gap: 35px;
+margin:20px;
+border-radius: 15px;
+background: #e3e3e3;
+box-shadow: 16px 16px 32px #ffd700,
+      5px 1px 32px #ff9000;
+border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1 {
+position: relative;
+width: 250px;
+}
+
+.inputBox input,
+.inputBox1 input {
+width: 100%;
+padding: 10px;
+outline: none;
+border: none;
+color: #000;
+font-size: 1em;
+background: transparent;
+border-left: 2px solid #000;
+border-bottom: 2px solid #000;
+transition: 0.1s;
+border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+margin-top: 5px;
+position: absolute;
+left: 0;
+transform: translateY(-4px);
+margin-left: 10px;
+padding: 10px;
+pointer-events: none;
+font-size: 12px;
+color: #000;
+text-transform: uppercase;
+transition: 0.5s;
+letter-spacing: 3px;
+border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+transform: translateX(113px) translateY(-15px);
+font-size: 0.5em;
+padding: 5px 10px;
+background: #000;
+letter-spacing: 0.2em;
+color: #fff;
+border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+transform: translateX(156px) translateY(-15px);
+font-size: 0.8em;
+padding: 5px 10px;
+background: #000;
+letter-spacing: 0.2em;
+color: #fff;
+border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+border: 2px solid #000;
+border-radius: 8px;
+}
+
+.enter {
+height: 45px;
+width: 100px;
+border-radius: 5px;
+border: 2px solid #000;
+cursor: pointer;
+background-color: transparent;
+transition: 0.5s;
+text-transform: uppercase;
+font-size: 10px;
+letter-spacing: 2px;
+margin-bottom: 3em;
+}
+
+.enter:hover {
+background-color: rgb(0, 0, 0);
+color: white;
+} 
+   }
+
+</style>
+
