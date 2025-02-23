@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Lodge</title>
+  <title>Royal</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -27,6 +27,102 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <style>
+  .slider_section {
+    background-color: #363636;
+    color: #ffffff;
+}
+
+.detail_box h1, .detail_box h2, .detail_box span {
+    color: #ffffff;
+}
+
+.detail_box p {
+    color: #e0e0e0;
+}
+
+.detail_box a {
+    background: linear-gradient(to right, #ffd277, #77530a);
+    color: #363636;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.detail_box a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 210, 119, 0.3);
+}
+
+body {
+    background-color: #363636;
+    
+   
+}
+
+.about_section {
+    background-color: #363636;
+    color: #ffffff;
+}
+
+.price_section {
+    background-color: #363636;
+    color: #ffffff;
+}
+
+.ring_section {
+    background-color: #363636;
+    color: #ffffff;
+}
+
+.client_section {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.contact_section {
+    background-color: #363636;
+    color: #ffffff;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.price_btn, .contact_section button {
+    background: linear-gradient(to right, #ffd277, #77530a);
+    color: #363636;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.price_btn:hover, .contact_section button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 210, 119, 0.3);
+}
+
+.contact_section input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.contact_section input::placeholder {
+    color: #a0a0a0;
+}
+
+.heading_container h2, .secondary_heading {
+    color: #ffd277;
+}
     .catogries{
       cursor: pointer;
       text-decoration: none;
@@ -214,7 +310,7 @@
 
 .price_section h2 .superscript {
   margin-left: 10px;
-  animation: typewriter 3s ease-in-out infinite;
+  /* animation: typewriter 3s ease-in-out infinite; */
 }
 @media (max-width: 768px) {
   .price_section h2 {
@@ -604,7 +700,7 @@ document.querySelectorAll('.price_container .box').forEach(card => {
           <a class="navbar-brand" href="index.php">
             <img src="images/logo.png" alt="">
             <span>
-              Lodge
+              Royal
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

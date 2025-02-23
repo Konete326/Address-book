@@ -128,10 +128,17 @@ include("header.php");
 
   <!-- item section -->
 
-  <div class="item_section layout_padding2">
+  <div class="item_section price_section layout_padding2">
     <div class="container">
+    <div>
+       <h2>
+  <span class="word">Our<span class="superscript">Jewellery</span> </span>
+
+</h2>
+      </div>
       <div class="item_container">
-        <div class="box">
+        <a href="jewellery.php">
+          <div class="box">
           <div class="price">
             <h6>
               Best PRICE
@@ -146,7 +153,9 @@ include("header.php");
             </h5>
           </div>
         </div>
-        <div class="box">
+        </a>
+        <a href="jewellery.php">
+          <div class="box">
           <div class="price">
             <h6>
               Best PRICE
@@ -160,8 +169,8 @@ include("header.php");
               Ring
             </h5>
           </div>
-        </div>
-        <div class="box">
+</div></a>
+<a href="jewellery.php"><div class="box">
           <div class="price">
             <h6>
               Best PRICE
@@ -176,6 +185,7 @@ include("header.php");
             </h5>
           </div>
         </div>
+        </a>
       </div>
     </div>
   </div>
@@ -186,7 +196,7 @@ include("header.php");
 
   <section class="about_section layout_padding2-top layout_padding-bottom">
     <div class="design-box">
-      <img src="images/design-2.png" alt="">
+      <img src="images/sell-my-jewelry-form-header.png" alt="">
     </div>
     <div class="container">
       <div class="row">
@@ -225,69 +235,73 @@ include("header.php");
 
   <section class="price_section layout_padding">
     <div class="container">
-      <div class="heading_container">
-        <h2>
-          Our Jewellery Price
-        </h2>
+ 
+
+  <div class="item_section price_section layout_padding2">
+    <div class="container">
+    <div>
+       <h2>
+  <span class="word">Our<span class="superscript">Cosmatic</span> </span>
+
+</h2>
       </div>
-      <div class="price_container">
-        <div class="box">
-          <div class="name">
+      <div class="item_container">
+        <a href="cosmatic.php">
+          <div class="box">
+          <div class="price">
             <h6>
-              Diamond Ring
+              Best PRICE
             </h6>
           </div>
           <div class="img-box">
-            <img src="images/p-1.png" alt="">
+            <img src="images/i-1.png" alt="">
           </div>
-          <div class="detail-box">
+          <div class="name">
             <h5>
-              $<span>1000.00</span>
+              Bracelet
             </h5>
-            <a href="">
-              Buy Now
-            </a>
           </div>
         </div>
-        <div class="box">
-          <div class="name">
+        </a>
+        <a href="cosmatic.php">
+          <div class="box">
+          <div class="price">
             <h6>
-              Diamond Ring
+              Best PRICE
             </h6>
           </div>
           <div class="img-box">
             <img src="images/i-2.png" alt="">
           </div>
-          <div class="detail-box">
-            <h5>
-              $<span>1000.00</span>
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
           <div class="name">
+            <h5>
+              Ring
+            </h5>
+          </div>
+</div></a>
+<a href="cosmatic.php"><div class="box">
+          <div class="price">
             <h6>
-              Diamond Ring
+              Best PRICE
             </h6>
           </div>
           <div class="img-box">
             <img src="images/i-3.png" alt="">
           </div>
-          <div class="detail-box">
+          <div class="name">
             <h5>
-              $<span>1000.00</span>
+              Earings
             </h5>
-            <a href="">
-              Buy Now
-            </a>
           </div>
         </div>
+        </a>
       </div>
+    </div>
+  </div>
+
+  <!-- end item section -->
       <div class="d-flex justify-content-center">
-        <a href="" class="price_btn">
+        <a href="cosmatic.php" class="price_btn">
           See More
         </a>
       </div>
