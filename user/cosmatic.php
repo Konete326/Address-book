@@ -14,7 +14,9 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            
             <img src="images/i-1.png" alt="">
+            
           </div>
           <div class="name">
             <h5>
@@ -30,7 +32,9 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            
             <img src="images/i-2.png" alt="">
+            
           </div>
           <div class="name">
             <h5>
@@ -46,7 +50,9 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            
             <img src="images/i-3.png" alt="">
+           
           </div>
           <div class="name">
             <h5>
@@ -81,16 +87,18 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            <a href="product.php">
             <img src="images/p-1.png" alt="">
+          </a></a>
           </div>
           <div class="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
-            <a href="">
+            <a href="cart.php">
               Add to Cart
             </a>
-            <a href="">
+            <a href="checkout.php">
               Buy Now
             </a>
           </div>
@@ -103,16 +111,18 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            <a href="product.php">
             <img src="images/i-2.png" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
-            <a href="">
+            <a href="cart.php">
               Add to Cart
             </a>
-            <a href="">
+            <a href="checkout.php">
               Buy Now
             </a>
           </div>
@@ -124,16 +134,18 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            <a href="product.php">
             <img src="images/i-3.png" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
-            <a href="">
+            <a href="cart.php">
               Add to Cart
             </a>
-            <a href="">
+            <a href="checkout.php">
               Buy Now
             </a>
           </div>
@@ -156,6 +168,7 @@ include("header.php");
 </h2>
       </div>
       <div class="price_container">
+       
         <div class="box">
           <div class="name">
             <h6>
@@ -163,38 +176,18 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
-            <img src="images/p-1.png" alt="">
-          </div>
-          <div class="detail-box">
-            
-            <h5>
-              $<span>1000.00</span>
-            </h5>
-            <a href="">
-              Add to Cart
-            </a>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="name">
-            <h6>
-              Diamond Ring
-            </h6>
-          </div>
-          <div class="img-box">
+            <a href="product.php">
             <img src="images/i-2.png" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
-            <a href="">
+            <a href="cart.php">
               Add to Cart
             </a>
-            <a href="">
+            <a href="checkout.php">
               Buy Now
             </a>
           </div>
@@ -206,16 +199,18 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            <a href="product.php">
             <img src="images/i-3.png" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
-            <a href="">
+            <a href="cart.php">
               Add to Cart
             </a>
-            <a href="">
+            <a href="checkout.php">
               Buy Now
             </a>
           </div>
@@ -244,16 +239,18 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            <a href="product.php">
             <img src="images/p-1.png" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
-            <a href="">
+            <a href="cart.php">
               Add to Cart
             </a>
-            <a href="">
+            <a href="checkout.php">
               Buy Now
             </a>
           </div>
@@ -265,16 +262,18 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            <a href="product.php">
             <img src="images/i-2.png" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
-            <a href="">
+            <a href="cart.php">
               Add to Cart
             </a>
-            <a href="">
+            <a href="checkout.php">
               Buy Now
             </a>
           </div>
@@ -286,7 +285,9 @@ include("header.php");
             </h6>
           </div>
           <div class="img-box">
+            <a href="product.php">
             <img src="images/i-3.png" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>

@@ -148,157 +148,47 @@ body {
 }
 
 .price_container .box {
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  position: relative;
-  background: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  transform-style: preserve-3d;
-  perspective: 1500px;
+    position: relative;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    transition: transform 0.5s, box-shadow 0.5s; /* Smooth transition */
 }
 
 .price_container .box:hover {
-  transform: translateY(-20px) rotateX(10deg) rotateY(-10deg);
-  box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.2);
-  animation: glowing 2s infinite;
+    transform: translateY(-20px) rotateX(10deg) rotateY(-10deg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.price_container .box .name h6 {
-  color: white;
-  margin: 0;
-  font-weight: bold;
-  animation: wave 2s ease-in-out infinite;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+.price_container .box .detail-box {
+    padding: 15px;
+    position: relative; /* Ensure positioning context for buttons */
+    z-index: 2; /* Bring detail box above other elements */
 }
 
 .price_container .box .detail-box a {
-  position: relative;
-  padding: 12px 30px;
-  background: linear-gradient(90deg, #ffd700, #ff9000, #ffd700);
-  background-size: 200% 100%;
-  color: #333333 !important; /* Added !important to ensure initial color */
-  border-radius: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.5s ease, color 0.3s ease; /* Added specific transition for color */
-  overflow: hidden;
-  animation: shine 3s infinite;
+    display: inline-block; /* Ensure buttons are inline-block */
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #ffd700, #ff9000);
+    color: #333; /* Ensure text is visible */
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin: 5px 0; /* Add margin for spacing */
+    text-decoration: none; /* Remove underline */
+    position: relative; /* Ensure positioning context */
+    z-index: 3; /* Bring buttons above other elements */
 }
 
 .price_container .box .detail-box a:hover {
-  transform: translateY(-5px) translateZ(30px);
-  letter-spacing: 2px;
-  box-shadow: 0 15px 25px rgba(255, 215, 0, 0.4);
-  color: white !important; /* Added !important to ensure hover color */
-  background: linear-gradient(90deg, #ff9000, #ffd700, #ff9000);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(255, 215, 0, 0.4);
+    color: white; /* Change text color on hover */
+    background: linear-gradient(90deg, #ff9000, #ffd700);
 }
-.price_container .box .detail-box a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-  transition: 0.5s;
-}
-
-.price_container .box .detail-box a:hover::before {
-  left: 100%;
- 
-}
-
-.price_container .box .img-box img {
-  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  transform-style: preserve-3d;
-}
-
-.price_container .box:hover .img-box img {
-  transform: scale(1.2) translateZ(50px) rotateZ(5deg);
-}
-
-.price_container .box .detail-box h5 {
-  background: linear-gradient(45deg, #ffd700, #ff9000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.8rem;
-  font-weight: bold;
-  animation: wave 3s ease-in-out infinite;
-}
-
-.price_container .box::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, rgba(255,215,0,0.1), rgba(255,144,0,0.1));
-  border-radius: 15px;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.price_container .box:hover::after {
-  opacity: 1;
-  transform: translateZ(-10px);
-}
-@keyframes cursorEffect {
-  0% { transform: scale(0); opacity: 1; }
-  100% { transform: scale(1.5); opacity: 0; }
-}
-
-.price_container .box {
-  /* ... existing properties ... */
-  cursor: pointer;
-}
-
-.price_container .box::before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(circle, rgba(255,215,0,0.4) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  mix-blend-mode: screen;
-  z-index: 1;
-  transition: opacity 0.2s;
-}
-
-.price_container .box:hover::before {
-  opacity: 1;
-}
-
-.price_container .box {
-  position: relative;
-  overflow: visible;
-}
-
-@keyframes typewriter {
-  0% { width: 0; opacity: 0; }
-  5% { opacity: 1; }
-  50% { width: 100%; opacity: 1; }
-  95% { opacity: 1; }
-  100% { width: 0; opacity: 0; }
-}
-
-.price_section h2 {
-  font-size: 4.5rem;
-  font-weight: 900;
-  text-align: center;
-  margin: 2rem 0;
-  position: relative;
-  padding: 20px 0;
-  white-space: nowrap;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-}
-
 .price_section h2 .word,
 .price_section h2 .superscript {
   display: inline-block;
@@ -310,7 +200,8 @@ body {
 
 .price_section h2 .superscript {
   margin-left: 10px;
-  /* animation: typewriter 3s ease-in-out infinite; */
+  animation: typewriter 3s ease-in-out infinite;
+}
 }
 @media (max-width: 768px) {
   .price_section h2 {

@@ -187,6 +187,11 @@ include("header.php");
         </div>
         </a>
       </div>
+      <div class="d-flex justify-content-center">
+        <a href="jewellery.php" class="price_btn">
+          See More
+        </a>
+      </div>
     </div>
   </div>
 
@@ -214,7 +219,7 @@ include("header.php");
               veniam, quis nostrud
             </p>
             <div>
-              <a href="">
+              <a href="about.php">
                 Read More
               </a>
             </div>
@@ -309,7 +314,40 @@ include("header.php");
   </section>
 
   <!-- end price section -->
-
+  <section class="about_section layout_padding2-top layout_padding-bottom">
+    <div class="design-box">
+      <img src="images/sell-my-jewelry-form-header.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Cosmatic Shop
+              </h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud
+            </p>
+            <div>
+              <a href=" about.php">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- ring section -->
 
   <section class="ring_section layout_padding">
