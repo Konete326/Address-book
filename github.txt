@@ -1,0 +1,108 @@
+Address Book Project Documentation
+================================
+
+Project Overview
+----------------
+A comprehensive address book web application that allows users to store and manage contact information. The project features a user-friendly interface with modern design elements and responsive layout.
+
+Team Members
+------------
+1. Sameer Husain
+   - Role: Backend Developer
+   - Contributions:
+     * Database design and implementation
+     * PHP backend development
+     * Server-side validation
+     * Admin panel functionality
+
+2. Sameer Akram
+   - Role: Frontend Developer
+   - Contributions:
+     * UI/UX design
+     * Responsive layout implementation
+     * Client-side validation
+     * Frontend interactivity
+
+Technical Stack
+---------------
+- Frontend:
+  * HTML5
+  * CSS3
+  * JavaScript
+  * Bootstrap 5.2.3
+  * jQuery 3.6.0
+  * Font Awesome
+
+- Backend:
+  * PHP
+  * MySQL
+  * Apache Server
+
+Installation Instructions
+------------------------
+1. Install XAMPP on your system
+2. Clone the repository to c:\xampp\htdocs\address-book
+3. Start Apache and MySQL services in XAMPP
+4. Import the database schema from the SQL file
+5. Access the application through localhost/address-book
+
+Project Structure
+----------------
+/address-book
+  ├── admin/
+  │   ├── assets/
+  │   ├── view_contact.php
+  │   ├── delete_contact.php
+  │   ├── header.php
+  │   ├── footer.php
+  │   └── connection.php
+  ├── css/
+  ├── js/
+  ├── index.php
+  └── github.txt
+
+Features
+--------
+1. Contact Management
+   - Add new contacts
+   - View contact list
+   - Delete contacts
+   - Search functionality
+
+2. Admin Dashboard
+   - Secure admin login
+   - Contact management interface
+   - Responsive design
+   - Live search functionality
+
+### Admin Panel Login
+
+Username : admin@gmail.com
+Password : admin@gmail.com
+
+3. User Interface
+   - Modern and clean design
+   - Mobile-responsive layout
+   - Intuitive navigation
+   - Form validation
+
+Security Features
+----------------
+- Input validation
+- SQL injection prevention
+- Secure admin authentication
+- XSS protection
+
+Future Enhancements
+------------------
+1. Contact categories
+2. Export contacts feature
+3. Bulk delete option
+4. Contact editing functionality
+5. User registration system
+
+Maintenance
+-----------
+For any issues or queries, please contact:
+- Backend: Sameer Husain
+- Frontend: Sameer Akram
